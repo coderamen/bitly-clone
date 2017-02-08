@@ -1,2 +1,49 @@
-<h1>Hello World</h1>
-<p>See Me in views/static/index.html.erb</p>
+<!-- <h1>Hello World</h1>
+<p>See Me in views/static/index.html.erb</p> -->
+<h1 id="main-heading">BEELY</h1>
+
+<form action="/urls" method="post">
+    Enter URL:
+    <input id="input-size" type="text" name="long_url">
+    <input id= "submit-button" type="submit" value="Submit">
+</form>
+
+<% if @error_message%>
+  <% @error_message.messages[:long_url].each do |msg|%>
+  <p id="error-msg"><%= msg %></p>
+  <% end %>
+<% end %>
+
+<% unless Url.all.empty? %>
+<div class="table">
+  <div class="table-head">
+    <div class="table-cell"><h2>LONG URL</h2></div>
+    <div class="table-cell"><h2>SHORT URL</h2></div>
+    <div class="table-cell"><h2>CLICK COUNT</h2></div>
+  </div>
+
+  <% @urls.each do |url| %>
+  <div class="table-row">
+    <div class="table-cell"><%= url.long_url %></div>
+    <div class="table-cell"><a href="<%= @domain + '/' %><%= url.short_url %>"><%= @domain + '/' %><%= url.short_url %></a></div>
+    <div class="table-count"><%= url.click_count %></div>
+  </div>
+  <% end %>
+
+</div>
+<% end %>
+
+
+
+
+    <!-- <div class="row">
+    <h2>Long Url</h2></div>
+    <h2>Short Url</h2></div>
+  <h2>Click Count</h2></div>
+      </div>
+        <% @urls.each do |url| %>
+      <div class="row">
+        <div class="table-cell"><%= url.long_url %></div>
+        <div class="table-cell"><%= url.short_url %></div>
+      </div>
+      <% end %> -->

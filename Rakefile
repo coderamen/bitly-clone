@@ -148,8 +148,8 @@ task "c9-server" do
 end
 
 
-desc 'Execute unit tests in spec'
-RSpec::Core::RakeTask.new(:test)
+# desc 'Execute unit tests in spec'
+# RSpec::Core::RakeTask.new(:test)
 
 
 desc 'default printout'

@@ -1,0 +1,77 @@
+/** {
+  box-sizing: border-box;
+}*/
+
+body {
+  background-image: url("../img/wire_bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+form {
+  text-align: center;
+  position: relative;
+  top: .5em;
+  right: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 17px;
+  margin-bottom: 2em;
+}
+
+.table {
+  border-top: 1px dashed #000;
+  display: table;
+  width: auto;
+  margin: auto;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+.table-head {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.table-cell {
+  display: table-column;
+  float: left;
+  width: 225px;
+  font-weight: 300;
+}
+
+.table-row {
+  display: table-row;
+  width: auto;
+}
+
+.table-count {
+  text-align: center;
+}
+
+#main-heading {
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+  text-align: center;
+  position: relative;
+  top: .5em;
+  right:15px;
+}
+
+#input-size {
+  width: 37%;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+}
+
+#submit-button {
+  width: 1.2em;
+  border-radius: none;
+  font-size: 100px;
+}
+
+#error-msg {
+  color: #abc213;
+}
