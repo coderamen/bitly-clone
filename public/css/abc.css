@@ -16,7 +16,7 @@ form {
   right: 1em;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
-  margin-bottom: 2em;
+  margin-bottom: -1em;
 }
 
 .table {
@@ -72,6 +72,9 @@ form {
   font-size: 100px;
 }
 
-#error-msg {
-  color: #abc213;
-}
+/*#error-msg {
+  position: relative;
+  top: -1em;
+  width: 300px;
+  margin-left: 25em;
+}*/

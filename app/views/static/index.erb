@@ -1,6 +1,6 @@
 <!-- <h1>Hello World</h1>
 <p>See Me in views/static/index.html.erb</p> -->
-<h1 id="main-heading">BEELY</h1>
+<h1 id="main-heading">Beely</h1>
 
 <form action="/urls" method="post">
     Enter URL:
@@ -9,6 +9,7 @@
 </form>
 
 <% if @error_message%>
+byebug
   <% @error_message.messages[:long_url].each do |msg|%>
   <p id="error-msg"><%= msg %></p>
   <% end %>
