@@ -9,10 +9,16 @@ post '/urls' do
   url.long_url = params[:long_url]
   url.short_url = url.shorten
   url.save
-  @error_message = url.errors
-  @urls = Url.all.order(id: :desc)
-  @domain = request.base_url
-  erb :'static/index'
+  url.to_json
+    # if url.save
+    #   # redirect '/'
+    #   url.to_json
+    # else
+    #   # @error_message = url.errors
+    #   # @urls = Url.all.order(id: :desc)
+    #   # @domain = request.base_url
+    #   # erb :'static/index'
+    # end
 end
 
 get '/:short_url' do

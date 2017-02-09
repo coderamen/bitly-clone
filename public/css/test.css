@@ -1,6 +1,6 @@
-/** {
+* {
   box-sizing: border-box;
-}*/
+}
 
 body {
   background-image: url("../img/wire_bg2.png");
@@ -12,20 +12,23 @@ body {
 form {
   text-align: center;
   position: relative;
-  top: .5em;
+  top: -0.5em;
   right: 1em;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 17px;
-  margin-bottom: -1em;
+  margin-bottom: 1.5em;
 }
 
 .table {
-  border-top: 1px dashed #000;
   display: table;
   width: auto;
   margin: auto;
   font-family: 'Work Sans', sans-serif;
+}
 
+@keyframes fadeout{
+  from{ transform: translateY(0)}
+  to { transform: translateX(300px);}
 }
 
 .table-head {
@@ -35,6 +38,7 @@ form {
 
 
 .table-cell {
+  padding-left: 1em;
   display: table-column;
   float: left;
   width: 225px;
@@ -48,6 +52,7 @@ form {
 
 .table-count {
   text-align: center;
+  margin-right: -1em;
 }
 
 #main-heading {
@@ -57,24 +62,43 @@ form {
   position: relative;
   top: .5em;
   right:15px;
+  opacity: 0;
 }
 
 #input-size {
-  width: 37%;
+  width: 36%;
   height: 35px;
   border: none;
-  border-radius: 10px;
+  margin-right: 12px;
 }
 
 #submit-button {
-  width: 1.2em;
-  border-radius: none;
-  font-size: 100px;
+  background-color: #555555;
+  color: #fff;
+  width: 6em;
+  height: 2.4em;
+  border: none;
+  font-size: 15px;
 }
 
-/*#error-msg {
-  position: relative;
-  top: -1em;
-  width: 300px;
-  margin-left: 25em;
-}*/
+
+
+#error-msg {
+  width: 200px;
+  margin-left: 20em;
+}
+
+i {
+  transform: translate(-5px, -1px);
+  vertical-align: middle;
+  color: #fff;
+}
+
+#input-label {
+  color: #fff;
+  background-color: #ff30de;
+  display:inline;
+  width: 100px;
+  height: auto;
+  padding: 6px;
+}
