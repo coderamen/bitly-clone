@@ -18,7 +18,7 @@ $(document).ready(function() {
         // $('.table').append('<div>' + data.long_url + '</div>')
         // var content = $(data.short_url).html();
         // $("html").text(content);
-        console.log(data.short_url)
+        // console.log(data.short_url)
 
       }
       // error: function(data) {
